@@ -1,11 +1,6 @@
 from tkinter import*
-#from search import *
 from tkinter import font
 import tkinter.messagebox
-from io import BytesIO
-import urllib
-import urllib.request
-from PIL import Image,ImageTk
 from urllib import request
 from xml.etree import ElementTree
 from mail import *
