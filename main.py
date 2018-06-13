@@ -25,20 +25,19 @@ def searchAnimal(e1, e2, e3, e4 , k):
     menuStatus = True
     
     i = 1
-    bgn_date = e3#input("검색시작 날짜(YYYYMMDD): ")
-    end_date = e4#input("검색종료 날짜(YYYYMMDD): ")
+    bgn_date = e3
+    end_date = e4
 
-    sido_name = e1#input("시/도를 입력하세요: ")
+    sido_name = e1
     url_sido = url_home + "sido?" + serviceKey
     sido_code = getRegionCode(url_sido, sido_name)
 
-    sigungu_name =e2 #input("시/군/구를 입력하세요: ")
+    sigungu_name =e2 
     url_sigungu = url_home + 'sigungu?' + serviceKey + '&upr_cd=' + sido_code
     sigungu_code = getRegionCode(url_sigungu, sigungu_name)
 
     
 
-   # animal_kind = input("동물 종류를 입력하세요(1.개/ 2.고양이/ 3.기타/ 4.상관없음: ")
     animal_kind = k
     
     if animal_kind == 1: 
