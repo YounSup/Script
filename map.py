@@ -14,7 +14,7 @@ def show_map(loc):
 
     client_id = "rQoDB8wRvqVKhJT6LwAz"
     client_secret = "FBRplP9uiA"
-    encText = urllib.parse.quote("경기도 파주시 가온로 67 해솔마을 5단")
+    encText = urllib.parse.quote(loc)
     #url = "https://openapi.naver.com/v1/map/geocode?query=" + encText # json 결과
     url = "https://openapi.naver.com/v1/map/geocode.xml?query=" + encText # xml 결과
     request = urllib.request.Request(url)

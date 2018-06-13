@@ -5,13 +5,13 @@ from email.mime.text import MIMEText
 host = "smtp.gmail.com"
 port = "587"
 
-def sendMail(data):
+def sendMail(email,data):
     global host, port
     senderAddr = "dudtjq0509@gmail.com"
     passwd = "a1024424" 
 
-    recipientAddr = str(input("받는 사람 이메일 주소: "))
-    title = str(input('제목: '))
+    recipientAddr = email
+    title = "유기동물 정보 조회"
 
     msg = MIMEMultipart('alternative')
 
@@ -32,5 +32,3 @@ def sendMail(data):
     s.close()
 
     print("메일 보내기 성공!")
-
-sendMail("test")
